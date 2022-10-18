@@ -15,7 +15,7 @@ public class CreepBugPre implements PageProcessor {
     //教师列表
     List<TeacherInfo> infos = new ArrayList<>();
 
-    //抓取间隔和抓取休眠时间
+    //
     private Site site = Site.me();
 
     @Override
@@ -107,8 +107,8 @@ public class CreepBugPre implements PageProcessor {
     }
 
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Spider.create(new CreepBugPre()).addUrl("http://cs.whu.edu.cn/teacher.aspx?showtype=jobtitle&typename=%e6%95%99%e6%8e%88").addPipeline(new ConsolePipeline()).run();
-    }
+    }*/
 
 }
